@@ -6,9 +6,15 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-<%= render "shared/menu" %>
-<%= yield %>
+<body class="yellow">
+
+<div class="one-third left">
+	<%= render "shared/menu" %>
+</div>
+
+<div class="two-third right">
+	<%= yield %>
+</div>
 
 </body>
 </html>
