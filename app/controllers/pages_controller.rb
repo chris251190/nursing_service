@@ -16,4 +16,12 @@ class PagesController < ApplicationController
 
   def anfahrt
   end
+
+  def impressum
+    
+  end
+
+  def datenschutz
+    
+  end
 end
