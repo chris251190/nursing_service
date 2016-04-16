@@ -1,4 +1,17 @@
-Rails.application.routes.draw do
+Rails.application.routes.draw do  
+
+  root 'pages#startseite'
+
+  get 'pages/leistungen'
+
+  get 'pages/ueber_uns'
+
+  get 'pages/arbeiten_bei_pflege_team_bonert'
+
+  get 'pages/kontakt'
+
+  get 'pages/anfahrt'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
