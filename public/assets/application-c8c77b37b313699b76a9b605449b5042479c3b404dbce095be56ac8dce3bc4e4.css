@@ -1,0 +1,42 @@
+.yellow {
+	background-color: #FFFC00;
+}
+@font-face {
+  font-family: "Alegreya-Black";
+  src: url(/assets/Alegreya-Black-645e1f6ca3f85582739e69d13cfd87c5f7da83db9bd7fab3b68b79a7a97029c6.otf) format("truetype");
+}
+/* line 6, C:/Users/christian/Desktop/Pflegedienst/nursing_service/app/assets/stylesheets/fonts.scss */
+.alegreya-black {
+  font-family: "Alegreya-Black";
+}
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.one-third {
+	width: 33.33333333%;
+}
+
+.two-third {
+	width: 66.666666666%;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
