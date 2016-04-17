@@ -8,12 +8,18 @@
 </head>
 <body class="yellow alegreya-black">
 
-<div class="one-third left">
-	<%= render "shared/menu" %>
+<div class="row">
+	<div class="border col-xs-3">
+		<%= render "shared/menu" %>
+	</div>
+
+	<div class="border col-xs-6">
+		<%= yield %>
+	</div>
 </div>
 
-<div class="two-third right">
-	<%= yield %>
+<div class="border">
+	<%= render "shared/footer" %>	
 </div>
 
 </body>

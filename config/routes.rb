@@ -2,19 +2,22 @@ Rails.application.routes.draw do
 
   root 'pages#startseite'
 
-  get 'pages/leistungen'
+  get 'leistungen', to: 'pages#leistungen'
 
-  get 'pages/ueber_uns'
+  get 'ueber_uns', to: 'pages#ueber_uns'
 
-  get 'pages/arbeiten_bei_pflege_team_bonert'
+  get 'arbeiten_bei_pflege_team_bonert', to: 'pages#arbeiten_bei_pflege_team_bonert'
 
-  get 'pages/kontakt'
+  get 'datenschutz', to: 'pages#datenschutz'
 
-  get 'pages/anfahrt'
+  get 'kontakt', to: 'pages#kontakt'
 
-  get 'pages/datenschutz'
+  get 'impressum', to: 'pages#impressum'
 
-  get 'pages/impressum'
+  get 'anfahrt', to: 'pages#anfahrt'
+
+  match '/contacts',     to: 'contacts#new', via: 'get' 
+  resources "contacts", only: [:new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
