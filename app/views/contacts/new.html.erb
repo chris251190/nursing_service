@@ -1,5 +1,30 @@
 <div align="center">
-  <h3>Send A message to Us</h3>
+
+<%= image_tag("http://placehold.it/600x150") %>
+<h1>Kontakt</h1>
+
+<p>
+  Kontakt heißt für uns auch gute Beziehungen zu pflegen, alt bewährte und ganz frische. Wir freuen uns auf jeden neuen Kunden.
+</p>
+
+<div class="row">
+  <div class="col-xs-5">
+    Team Pflege Bonert <br>
+    Spechtweg 2 <br>
+    21614 Buxtehude
+  </div>
+
+  <div class="col-cs-5">
+    Tel. 040 - 8000 776 0
+    Fax 040 - 45 15 62
+  </div>
+</div>
+
+<br>
+
+E-Mail schreiben
+Schreiben Sie uns gerne eine Mail, rufen Sie uns an oder füllen Sie einfach unser Kontaktformular aus. 
+
 
   <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
     <%= f.input :name, :required => true %>
