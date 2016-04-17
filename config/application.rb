@@ -24,5 +24,6 @@ module NursingService
     config.active_record.raise_in_transactional_callbacks = true
     config.assets.enabled = true
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    config.action_controller.page_cache_directory = "#{Rails.root.to_s}/public/deploy"
   end
 end

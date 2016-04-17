@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  caches_page :startseite, :leistungen, :ueber_uns, :arbeiten_bei_pflege_team_bonert, :kontakt, :anfahrt, :impressum, :datenschutz
+
   def startseite
   end
 
