@@ -56,6 +56,3 @@ gem 'simple_form'
 group :development, :test do
 	gem 'foreman'
 end
-
-gem 'actionpack-page_caching'
-gem 'actionpack-action_caching'
