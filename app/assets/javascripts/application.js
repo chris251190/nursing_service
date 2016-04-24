@@ -15,3 +15,26 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+
+$(document).on('ready page:load', function () {
+  
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+    	console.log("Hi");
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+        
+    }
+}
+
+});
+
+
+
+
+
+
