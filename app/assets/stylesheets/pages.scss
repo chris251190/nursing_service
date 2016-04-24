@@ -25,6 +25,14 @@ body {
 	color: $font-color;
 }
 
+.scrollToTop { 
+ position: fixed;
+ bottom:20px;
+ right:20px;
+ font-size: 15pt; 
+ cursor: pointer;
+}
+
 .main-section {
 float: none !important;
 margin-left: auto;

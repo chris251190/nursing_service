@@ -16,29 +16,47 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
+$(document).on('ready page:load', function(){
 
-$(document).on('ready page:load', function () {
-  
-var acc = document.getElementsByClassName("accordion");
-var i;
+	//for datenschutz accordions
+	var acc = document.getElementsByClassName("accordion");
+	var i;
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
-    	console.log("Hi");
-        this.classList.toggle("active");
-        this.nextElementSibling.classList.toggle("show");
-        
-    }
-}
+	for (i = 0; i < acc.length; i++) {
+    	acc[i].onclick = function(){
+        	this.classList.toggle("active");
+        	this.nextElementSibling.classList.toggle("show");        
+    	}
+	}
 
+	//for contact form
+	setTimeout(function(){
+    $('.notice').removeClass("show");
+  }, 3000);
+
+
+	//scroll-to-top-button
+	$('.scrollToTop').hide();
+
+	$(window).on('scroll', function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('.scrollToTop').on('click', function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
 });
 
 
-$(document).ready(function(){
-  setTimeout(function(){
-    $('.notice').removeClass("show");
-  }, 3000);
- })
+
+
+
 
 
 

@@ -59,3 +59,4 @@ end
 
 gem 'actionpack-page_caching'
 gem 'actionpack-action_caching'
+gem "font-awesome-rails"
