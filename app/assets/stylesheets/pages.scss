@@ -273,3 +273,9 @@ border: 1px solid black;
     max-height: 500px;
 }
 
+
+abbr[title], abbr[data-original-title] {
+    cursor: inherit !important;
+    border-bottom: none !important;
+}
+
