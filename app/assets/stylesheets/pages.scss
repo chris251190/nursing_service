@@ -7,6 +7,9 @@ $panel-color: #FFFFFF;
 $menu-color: #3E3E3E;
 $font-color: #3E3E3E;
 
+
+$font-family: "Alegreya-Black";
+
 body {
 	font-size: 13pt !important;
 }
@@ -205,12 +208,12 @@ float: right;
 }
 
 @font-face {
-font-family: "Alegreya-Black";
+font-family: $font-family;
 src: font-url('Alegreya-Black.otf') format("truetype");
 }
 
 .alegreya-black {
-font-family: "Alegreya-Black";
+font-family: $font-family;
 }
 
 
