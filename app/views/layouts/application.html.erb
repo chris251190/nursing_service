@@ -6,7 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class="saffron-light alegreya-black">
+<body class="alegreya-black">
 
 <div class="row">
 	
@@ -14,15 +14,12 @@
 		<%= render "shared/menu" %>
 	</div>	
 
-	<div class="col-xs-6 saffron center main-section">
+	<div class="col-xs-8">
 		<%= yield %>
 	</div>
 
 </div>
 
-<div class="saffron">
-	<%= render "shared/footer" %>	
-</div>
 
 </body>
 </html>
