@@ -7,10 +7,13 @@ $panel-color: #FFFFFF;
 $menu-color: #3E3E3E;
 $font-color: #3E3E3E;
 
+
 $font-family: "Alegreya-Black";
+$word-spacing: 2pt;
 
 body {
 	font-size: 13pt !important;
+	word-spacing: $word-spacing;	
 }
 
 .background {
