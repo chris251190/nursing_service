@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-	font-size: 15pt !important;
+	font-size: 13pt !important;
 }
 
 .main-section {
@@ -80,6 +80,10 @@ background-color: #dff0d8;
 border-color: #d6e9c6;
 color: #468847;
 text-align: left;
+}
+
+abbr {
+	text-decoration: none;
 }
 
 /*form styles end */
