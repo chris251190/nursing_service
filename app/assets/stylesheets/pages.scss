@@ -106,21 +106,23 @@ text-align: left;
 }
 
 .simple_form {
-	width: 50%;
+	width: 40%;
 	margin-left: auto;
 	margin-right: auto;
 
-	.form-row input {
+	.input-width input {
 		width: 50%;
 	}
 
-	.form-row textarea {
+	.input-width textarea {
 		width: 50%;
+		max-width: 50%;
+		max-height: 100px;
 	}
 }
 
-.form-row {
-	margin-bottom: 10%;
+.row-padding-bottom {
+	margin-bottom: 5%;
 }
 
 .radio-group {
