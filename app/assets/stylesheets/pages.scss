@@ -101,11 +101,80 @@ color: #468847;
 text-align: left;
 }
 
+.jumbotron {
+	background-color: transparent !important;
+}
 
-.string, .email, .text {
+.simple_form {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+
+	.form-row input {
+		width: 50%;
+	}
+
+	.form-row textarea {
+		width: 50%;
+	}
+}
+
+.form-row {
+	margin-bottom: 10%;
+}
+
+.radio-group {
+    float: right;
+    width: 50%;
+}
+
+.anrede {
+	float: left;	
+}
+
+.label-anrede {
 	margin-right: 10%;
 }
 
+.contact_name {
+	label {
+		float: left;
+	}
+
+	input {
+		float: right;
+	}
+}
+
+.contact_telefon {
+	label {
+		float: left;
+	}
+
+	input {
+		float: right;
+	}
+}
+
+.contact_email {
+	label {
+		float: left;
+	}
+
+	input {
+		float: right;
+	}
+}
+
+.contact_message {
+	label {
+		float: left;
+	}
+
+	textarea {
+		float: right;
+	}
+}
 
 /*form styles end */
 
