@@ -1,9 +1,26 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$background-color: #FFFFFF;
+$accordion-color: #FFFFFF;
+
+$main-color: #FFFFFF;
+$panel-color: #FFFFFF;
+
+$menu-color: #3E3E3E;
+$font-color: #3E3E3E;
 
 body {
 	font-size: 13pt !important;
+}
+
+.background {
+	background-color: $background-color;
+}
+
+.main-color {
+	background-color: $main-color;
+}
+
+.font-color {
+	color: $font-color;
 }
 
 .main-section {
@@ -11,6 +28,8 @@ float: none !important;
 margin-left: auto;
 margin-right: auto;
 text-align: center;
+padding-left: 15px;
+padding-right: 15px;
 }
 
 .padding-top-impressum {
@@ -25,11 +44,11 @@ height: 250px;
 ul {
 
 a {
-color: #333333;
+color: $menu-color;
 }
 
 a:hover {
-color: #333333;	
+color: $menu-color;	
 }
 
 list-style-type: none;
@@ -37,12 +56,12 @@ text-decoration: none;
 }
 
 a {
-    color: #333333 !important;	
+    color: $menu-color !important;	
     text-decoration: none;
 }
 
 .menu {
-padding-left: 2%;
+padding-left: 4%;
 padding-top: 2%;
 font-size: 15pt;
 position: fixed;
@@ -82,9 +101,11 @@ color: #468847;
 text-align: left;
 }
 
-abbr {
-	text-decoration: none;
+
+.string, .email, .text {
+	margin-right: 10%;
 }
+
 
 /*form styles end */
 
@@ -114,15 +135,15 @@ padding: 10px 10px 10px 10px;
 border: 1px solid black;	
 }
 
-.porcelain {
-background-color: #ECF0F1;
+.no-padding {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
 }
-
 
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
+    background-color: $accordion-color;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -133,27 +154,26 @@ background-color: #ECF0F1;
     transition: 0.4s;
 }
 
-.accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
+.accordion:before {
+    content: '\25BA'; /* Unicode character for "plus" sign (+) */    
     color: #777;
-    float: right;
-    margin-left: 5px;
+    float: left;
+    margin-right: 5px;
 }
 
-.accordion.active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+.accordion.active:before {
+    content: '\25BC'; /* Unicode character for "minus" sign (-) */
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .accordion.active, .accordion:hover {
-    background-color: #ddd;
+    background-color: $accordion-color;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: $panel-color !important;
     max-height: 0;
     overflow: hidden;
     transition: 0.6s ease-in-out;
