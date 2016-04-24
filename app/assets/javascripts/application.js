@@ -34,6 +34,14 @@ for (i = 0; i < acc.length; i++) {
 });
 
 
+$(document).ready(function(){
+  setTimeout(function(){
+    $('.notice').removeClass("show");
+  }, 3000);
+ })
+
+
+
 
 
 

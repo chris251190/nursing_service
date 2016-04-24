@@ -1,5 +1,13 @@
 <%= image_tag("5", :class => "header-img") %>
 
+<% if notice %>
+
+<div class="notice show">
+  <%= notice %>
+</div>
+
+<% end %>
+
 <div class="main-section">
 
 <h1>Kontakt</h1>
@@ -65,9 +73,10 @@
     </div>
     <div>
 
-      <br>
+    <br>
 
-      <%= f.button :submit, 'Send message' %>
+    <%= f.button :submit, 'Send message' %>
+    
     </div>
   <% end %>
 
