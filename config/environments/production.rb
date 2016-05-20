@@ -2,12 +2,12 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
-  config.cache_classes = true
+  config.cache_classes = false
 
-  config.action_mailer.default_url_options = { :host => 'http://pflege-team-bonert.herokuapp.com/kontakt' }
-  Rails.application.routes.default_url_options[:host] = 'http://pflege-team-bonert.herokuapp.com/kontakt'
+  config.action_mailer.default_url_options = { :host => 'http://pflege-team-bonert.herokuapp.com' }
+  #Rails.application.routes.default_url_options[:host] = 'http://pflege-team-bonert.herokuapp.com/kontakt'
 
-  config.action_mailer.delivery_method = :smtp
+config.action_mailer.delivery_method = :smtp
 config.action_mailer.perform_deliveries = true
 config.action_mailer.raise_delivery_errors = false
 config.action_mailer.default :charset => "utf-8"
