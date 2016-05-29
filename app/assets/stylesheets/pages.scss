@@ -4,11 +4,12 @@ $accordion-color: #FFFFFF;
 $main-color: #FFFFFF;
 $panel-color: #FFFFFF;
 
-$menu-color: #3E3E3E;
+$menu-color: #b52e31;
 $font-color: #3E3E3E;
 
 
-$font-family: "Alegreya-Black";
+$font-family: 'Muli';
+$header-font: 'Julius Sans One';
 $word-spacing: 2pt;
 
 body {
@@ -18,6 +19,14 @@ body {
 
 .background {
 	background-color: $background-color;
+}
+
+.background-image {
+	background-image: image-url("background.jpg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .main-color {
@@ -31,18 +40,17 @@ body {
 .scrollToTop { 
  position: fixed;
  bottom:20px;
- right:30px;
+ right: 17px;
  font-size: 20pt; 
  cursor: pointer;
+ color: $font-color;
 }
 
 .main-section {
-float: none !important;
-margin-left: auto;
-margin-right: auto;
-text-align: center;
-padding-left: 15px;
-padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2%;
+	padding-right: 2%;
 }
 
 .notice {
@@ -66,34 +74,41 @@ padding-right: 15px;
 }
 
 .header-img {
-width: 100%;
-height: 250px;
+	width: 100%;
+	height: 250px;
+    margin-top: -26%;
 }
 
 ul {
 
 a {
-color: $menu-color;
+	color: $menu-color !important;
 }
 
-a:hover {
-color: $menu-color;	
-}
-
-list-style-type: none;
-text-decoration: none;
+	list-style-type: none;
+	text-decoration: none;
 }
 
 a {
-    color: $menu-color !important;	
+	color: $font-color !important;	
     text-decoration: none;
 }
 
+a:hover {
+	color: $menu-color !important;	
+}
+
 .menu {
-padding-left: 4%;
-padding-top: 2%;
-font-size: 15pt;
-position: fixed;
+	padding-left: 4%;
+	font-size: 15pt;
+	font-weight: bold;
+	position: fixed;
+	letter-spacing: 3px;
+	line-height: 40px;
+}
+
+.content {
+	margin-left: 3%;
 }
 
 /*form styles */
@@ -222,8 +237,13 @@ font-family: $font-family;
 src: font-url('Alegreya-Black.otf') format("truetype");
 }
 
-.alegreya-black {
+.font {
 font-family: $font-family;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $header-font !important;
+	font-weight: bold !important;
 }
 
 
@@ -256,7 +276,7 @@ border: 1px solid black;
 
 .accordion:before {
     content: '\25BA'; /* Unicode character for "plus" sign (+) */    
-    color: #777;
+    color: $menu-color;
     float: left;
     margin-right: 5px;
 }
@@ -290,5 +310,12 @@ border: 1px solid black;
 abbr[title], abbr[data-original-title] {
     cursor: inherit !important;
     border-bottom: none !important;
+}
+
+.logo {
+    width: 20%;
+    margin-left: 4%;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 

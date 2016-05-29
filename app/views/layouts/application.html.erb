@@ -2,19 +2,25 @@
 <html>
 <head>
   <title>NursingService</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Muli|Julius+Sans+One' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class="alegreya-black background font-color">
+<body class="font background-image font-color">
 
 <div class="row">
+	<%= image_tag("logo", :class => "logo") %>
+</div>
+
+<div class="row">	
 	
 	<div class="col-xs-3">
 		<%= render "shared/menu" %>
 	</div>	
 
-	<div class="col-xs-8 main-color no-padding">
+	<div class="col-xs-8 main-color content no-padding">
 		<%= yield %>
 	</div>
 
